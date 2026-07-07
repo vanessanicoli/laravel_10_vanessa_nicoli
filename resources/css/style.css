@@ -1,3 +1,104 @@
-h1 {
-    color: red;
+/* COLORS */
+:root {
+    --dgr: rgb(39, 60, 44);
+    --gr: rgb(83, 147, 78);
+    --lgr: rgb(196, 233, 147);
+}
+
+.bg-dgr {
+    background-color: var(--dgr);
+}
+
+.text-dgr {
+    color: var(--dgr);
+}
+
+.bg-gr {
+    background-color: var(--gr);
+}
+
+.text-gr {
+    color: var(--gr);
+}
+
+.bg-lgr {
+    background-color: var(--lgr);
+}
+
+.text-lgr {
+    color: var(--lgr);
+}
+
+body {
+    background-color: var(--dgr);
+    /* background-color: var(--gr); */
+    color: var(--lgr);
+}
+
+/* NAVBAR */
+.navbar-toggler {
+    border: 2px solid var(--lgr);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link {
+    color: var(--lgr);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    color: var(--dgr);
+}
+
+/* HOME */
+.btn-home {
+    width: 350px;
+    height: 7vh;
+    background-color: var(--gr);
+    border: 3px solid var(--lgr);
+    color: var(--lgr);
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.btn-home:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    border: 3px solid var(--lgr);
+    color: var(--lgr);
+}
+
+/* FORM */
+.btn-form {
+    width: 200px;
+    height: 6vh;
+    background-color: var(--lgr);
+    border: 3px solid var(--lgr);
+    color: var(--gr);
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.btn-form:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    border: 3px solid var(--lgr);
+    color: var(--lgr);
 }

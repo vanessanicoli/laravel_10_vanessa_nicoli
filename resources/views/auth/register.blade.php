@@ -1,4 +1,5 @@
 <x-layout>
+
     
     <div class="row mt-2">
         <div class="col-12 d-flex flex-column justify-content-center align-items-center">
@@ -6,6 +7,9 @@
             <h4 class="display-6 fw-semibold text-center mt-3">Che aspetti? Unisciti a noi!</h4>
         </div>
     </div>
+
+    <x-error />
+    
     <div class="row container-fluid justify-content-center mt-3">
         <form class="col-12 col-md-6 bg-gr p-4 my-4 rounded-4 shadow w-md-50" method="POST" action="{{ route('register.store') }}">
             <div class="mb-3">
